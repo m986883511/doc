@@ -38,3 +38,7 @@ import hashlib
 m1 = hashlib.md5()  # 使用md5对象里的update方法md5转换
 ```
 
+[树莓派页面](raspberry.html)
+
+
+
