@@ -1,6 +1,6 @@
 # Welcome to MkDocs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+For source code [m986883511/doc](https://github.com/m986883511/doc).
 
 ## Commands
 
@@ -8,7 +8,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 * `mkdocs serve` - Start the live-reloading docs server.
 * `mkdocs build` - Build the documentation site.
 * `mkdocs -h` - Print help message and exit.
-* mkdocs gh-deploy --clean   #部署到远程pages分支
+* `mkdocs gh-deploy --clean`   #部署到远程pages分支
 
 ## Project layout
 
