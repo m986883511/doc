@@ -6,5 +6,6 @@ nav:
   - home: index.md
   - raspberry: raspberry.md
   - gihub: github.md
+  - python: python.md
 
 
