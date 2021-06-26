@@ -6,16 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        
-        <link rel="shortcut icon" href="/img/favicon.ico">
-        <title>MkLorum</title>
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/css/base.css" rel="stylesheet">
+        <link rel="canonical" href="https://example.com/python.html">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Python - MkLorum</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
 
-        <script src="/js/jquery-1.10.2.min.js" defer></script>
-        <script src="/js/bootstrap.min.js" defer></script>
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
@@ -23,7 +23,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="/index.html">MkLorum</a>
+                <a class="navbar-brand" href="index.html">MkLorum</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -34,13 +34,13 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href="/index.html" class="nav-link">home</a>
+                                <a href="index.html" class="nav-link">home</a>
                             </li>
                             <li class="navitem">
-                                <a href="/raspberry.html" class="nav-link">raspberry</a>
+                                <a href="raspberry.html" class="nav-link">raspberry</a>
                             </li>
                             <li class="navitem">
-                                <a href="/github.html" class="nav-link">gihub</a>
+                                <a href="github.html" class="nav-link">gihub</a>
                             </li>
                         </ul>
 
@@ -57,15 +57,60 @@
 
         <div class="container">
             <div class="row">
-
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
     </div>
 
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#python" class="nav-link">Python</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">爬虫</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
 
+<h1 id="python">Python</h1>
+<h2 id="_1">爬虫</h2>
+<pre><code class="language-en">import requests
+print('访问baidu网站 获取Response对象')
+headers = {'content-type': 'application/json',
+            'User-Agent': r'Mozilla/5.0 (Linux; Android 9; NX609J Build/PKQ1.181021.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044904 Mobile Safari/537.36 MMWEBID/5292 MicroMessenger/7.0.6.1460(0x27000634) Process/tools NetType/WIFI Language/zh_CN',
+           'Host':'dwmm136.cn',
+           'Connection':'keep-alive',
+           'Cache-Control: max-age':0,
+           'Upgrade-Insecure-Requests': 1,
+           'User-Agent': 'Mozilla/5.0 (Linux; Android 9; NX609J Build/PKQ1.181021.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044904 Mobile Safari/537.36 MMWEBID/5292 MicroMessenger/7.0.6.1460(0x27000634) Process/tools NetType/WIFI Language/zh_CN',
+           'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/tpg,*/*;q=0.8',
+           'Referer':'http://dwmm136.cn/web/index.php?c=article&amp;a=rtbus&amp;do=line_ssgj&amp;lineId=025-305%E8%B7%AF-0&amp;lineNo=305%E8%B7%AF&amp;name=305&amp;direction=0',
+           'Accept-Encoding':'gzip, deflate',
+           'Accept-Language':'zh-CN,en-US;q=0.9',
+           'Cookie': 'PHPSESSID=03u3cai9k953uvn34kt1gev847; Hm_lvt_416c770ac83a9d996d7b3793f8c4994d=1568547083; Hm_lpvt_416c770ac83a9d996d7b3793f8c4994d=1568557360'
+           }
+
+url = &quot;http://dwmm136.cn/web/index.php?c=article&amp;a=rtbus&amp;do=line_ssgj&amp;lineId=025-305%E8%B7%AF-0&amp;lineNo=305%E8%B7%AF&amp;name=305&amp;direction=0 HTTP/1.1&quot;
+r = requests.get(url,headers)
+print(r.status_code)
+print(r.encoding)
+print(r.apparent_encoding)
+print('将对象编码转换成UTF-8编码并打印出来')
+r.encoding = 'utf-8'
+print(r.text)
+</code></pre>
+<pre><code class="language-en">import hashlib
+m1 = hashlib.md5()  # 使用md5对象里的update方法md5转换
+</code></pre></div>
             </div>
         </div>
 
@@ -74,11 +119,11 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "/",
+            var base_url = ".",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="/js/base.js" defer></script>
-        <script src="/search/main.js" defer></script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
