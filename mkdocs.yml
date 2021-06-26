@@ -1,0 +1,10 @@
+site_name: MkLorum
+site_url: https://example.com/
+use_directory_urls: false
+
+nav:
+  - home: index.md
+  - raspberry: raspberry.md
+  - gihub: github.md
+
+
